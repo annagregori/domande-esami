@@ -5,7 +5,7 @@ let paginaCorrente = "";
 async function inizializzaSito() {
     try {
         // Carica l'indice delle pagine per il menu laterale
-        const responseMenu = await fetch('menu.json');
+        const responseMenu = await fetch('./menu.json');
         const pagine = await responseMenu.json();
         
         renderMenu(pagine);
@@ -53,7 +53,7 @@ async function cambiaPagina(idPagina, titoloPagina) {
 
     try {
         // Carica il file JSON specifico (es: politica-economica.json)
-        const responseDati = await fetch(`${idPagina}.json`);
+        const responseDati = await fetch(`./${idPagina}.json`);
         elencoDomande = await responseDati.json();
         renderTabella(elencoDomande);
     } catch (error) {
