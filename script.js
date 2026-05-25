@@ -65,27 +65,52 @@ async function cambiaPagina(idPagina, titoloPagina) {
 // 4. Mostra i dati effettivi (Identica a prima)
 function renderTabella(data) {
     const tbody = document.getElementById('table-body');
+    
+    // 1. Svuota la tabella prima di inserire i nuovi dati
     tbody.innerHTML = '';
 
-    if(data.length === 0) {
+    if (data.length === 0) {
         tbody.innerHTML = `<tr><td colspan="4" class="p-4 text-center text-gray-500">Nessun risultato trovato</td></tr>`;
         return;
     }
 
-    data.forEach(item => {
-        const profClass = item.prof === 'Imbert' ? 'bg-[#1C3D27] text-[#52BA6F]' : 'bg-[#4A2424] text-[#ECA2A2]';
-        const corsoClass = item.corso === 'CLEA C' ? 'bg-[#1F3B4D] text-[#5CA3E6]' : 'bg-[#3F2D54] text-[#B388EB]';
+    // 2. Accumula tutte le righe in una stringa di testo
+    let righeHTML = '';
 
-        const row = `
-            <tr class="hover:bg-[#202020] transition-colors">
-                <td class="p-3 flex items-center gap-2 text-gray-200">📄 ${item.domanda}</td>
-                <td class="p-3"><span class="px-2 py-0.5 rounded text-xs font-medium ${profClass}">${item.prof}</span></td>
-                <td class="p-3"><span class="px-2 py-0.5 rounded text-xs font-medium ${corsoClass}">${item.corso}</span></td>
+    data.forEach(item => {
+        // Colore dinamico per i professori
+        const profClass = item.prof === 'Imbert' 
+            ? 'bg-[#1C3D27] text-[#52BA6F]' 
+            : 'bg-[#4A2424] text-[#ECA2A2]';
+
+        // Colore dinamico per il corso
+        const corsoClass = item.corso === 'CLEA C' 
+            ? 'bg-[#1F3B4D] text-[#5CA3E6]' 
+            : 'bg-[#3F2D54] text-[#B388EB]';
+
+        // Genera il blocco HTML della riga corrente
+        righeHTML += `
+            <tr class="hover:bg-[#202020] transition-colors border-b border-[#2A2A2A]">
+                <td class="p-3 flex items-center gap-2 text-gray-200">
+                    📄 ${item.domanda}
+                </td>
+                <td class="p-3">
+                    <span class="px-2 py-0.5 rounded text-xs font-medium ${profClass}">
+                        ${item.prof}
+                    </span>
+                </td>
+                <td class="p-3">
+                    <span class="px-2 py-0.5 rounded text-xs font-medium ${corsoClass}">
+                        ${item.corso}
+                    </span>
+                </td>
                 <td class="p-3 text-gray-400">${item.data}</td>
             </tr>
         `;
-        tbody.insertAdjacentHTML('beforeend', row);
     });
+
+    // 3. Inserisce tutte le righe insieme all'interno del corpo della tabella
+    tbody.innerHTML = righeHTML;
 }
 
 // 5. Gestione filtri (Identica a prima)
