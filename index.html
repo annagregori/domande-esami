@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domande 2025/2026</title>
+    <title>Il mio Notion su GitHub</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        body { background-color: #191919; color: #E3E3E3; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: #191919; color: #E3E3E3; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+        .sidebar-item.active { background-color: #2A2A2A; color: #FFF; font-weight: 500; }
     </style>
 </head>
-<body class="p-8">
+<body class="flex h-screen overflow-hidden">
 
-    <div class="max-w-5xl mx-auto">
-        <h1 class="text-3xl font-bold mb-6 flex items-center gap-2">
-            💬 Domande 2025/2026
-        </h1>
+    <aside class="w-64 bg-[#202020] border-r border-[#2A2A2A] flex flex-col justify-between p-4 shrink-0">
+        <div>
+            <div class="flex items-center gap-2 px-2 py-1.5 mb-6 hover:bg-[#2A2A2A] rounded cursor-pointer text-sm font-semibold">
+                <span class="bg-[#3F3F3F] text-xs px-1.5 py-0.5 rounded">C</span> Catia Z's Notion
+            </div>
+            
+            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-2 mb-2">Pagine</div>
+            <nav id="sidebar-menu" class="space-y-1 text-sm text-gray-400"></nav>
+        </div>
+        
+        <div class="text-xs text-gray-600 text-center">Powered by GitHub</div>
+    </aside>
 
-        <div class="flex flex-wrap gap-4 mb-6 bg-[#202020] p-4 rounded-lg border border-[#2A2A2A]">
-            <div>
-                <label class="block text-xs text-gray-400 mb-1 font-medium">Professore</label>
-                <select id="filter-prof" class="bg-[#2F2F2F] text-sm text-white rounded px-3 py-1.5 outline-none border border-[#3F3F3F] cursor-pointer">
-                    <option value="all">Tutti</option>
-                    <option value="Imbert">Imbert</option>
-                    <option value="Non specificato">Non specificato</option>
-                </select>
+    <main class="flex-1 p-8 overflow-y-auto">
+        <div class="max-w-5xl mx-auto">
+            
+            <h1 id="page-title" class="text-3xl font-bold mb-6 flex items-center gap-2">Caricamento...</h1>
+
+            <div class="flex flex-wrap gap-4 mb-6 bg-[#202020] p-4 rounded-lg border border-[#2A2A2A]">
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1 font-medium">Professore</label>
+                    <select id="filter-prof" class="bg-[#2F2F2F] text-sm text-white rounded px-3 py-1.5 outline-none border border-[#3F3F3F] cursor-pointer">
+                        <option value="all">Tutti</option>
+                        <option value="Imbert">Imbert</option>
+                        <option value="Non specificato">Non specificato</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1 font-medium">Corso di studi</label>
+                    <select id="filter-corso" class="bg-[#2F2F2F] text-sm text-white rounded px-3 py-1.5 outline-none border border-[#3F3F3F] cursor-pointer">
+                        <option value="all">Tutti</option>
+                        <option value="CLEA A">CLEA A</option>
+                        <option value="CLEA C">CLEA C</option>
+                    </nav>
+                </div>
             </div>
 
-            <div>
-                <label class="block text-xs text-gray-400 mb-1 font-medium">Corso di studi</label>
-                <select id="filter-corso" class="bg-[#2F2F2F] text-sm text-white rounded px-3 py-1.5 outline-none border border-[#3F3F3F] cursor-pointer">
-                    <option value="all">Tutti</option>
-                    <option value="CLEA A">CLEA A</option>
-                    <option value="CLEA C">CLEA C</option>
-                </select>
+            <div class="overflow-x-auto border border-[#2A2A2A] rounded-lg">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-[#2A2A2A] text-gray-400 text-sm bg-[#1F1F1F]">
+                            <th class="p-3 font-medium w-1/2">Domanda</th>
+                            <th class="p-3 font-medium">Prof</th>
+                            <th class="p-3 font-medium">Corso di studi</th>
+                            <th class="p-3 font-medium">Data</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body" class="text-sm divide-y divide-[#2A2A2A]"></tbody>
+                </table>
             </div>
         </div>
-
-        <div class="overflow-x-auto border border-[#2A2A2A] rounded-lg">
-            <table class="w-full text-left border-collapse">
-                <thead>
-                    <tr class="border-b border-[#2A2A2A] text-gray-400 text-sm bg-[#1F1F1F]">
-                        <th class="p-3 font-medium w-1/2">Domanda</th>
-                        <th class="p-3 font-medium">Prof</th>
-                        <th class="p-3 font-medium">Corso di studi</th>
-                        <th class="p-3 font-medium">Data</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body" class="text-sm divide-y divide-[#2A2A2A]">
-                    </tbody>
-            </table>
-        </div>
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
