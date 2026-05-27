@@ -78,15 +78,19 @@ function renderTabella(data) {
     let righeHTML = '';
 
     data.forEach(item => {
-        // Colore dinamico per i professori
-        const profClass = item.prof === 'Imbert' 
-            ? 'bg-[#1C3D27] text-[#52BA6F]' 
-            : 'bg-[#4A2424] text-[#ECA2A2]';
+        // Colore dinamico per i professori (assegna un colore a ciascuno o un grigio neutro di default)
+let profClass = 'bg-[#2F2F2F] text-gray-300'; // Grigio neutro per gli altri
+if (item.prof === 'Imbert') profClass = 'bg-[#1C3D27] text-[#52BA6F]';  // Verde
+if (item.prof === 'Morone') profClass = 'bg-[#1F3B4D] text-[#5CA3E6]';  // Blu
+if (item.prof === 'Bonelli') profClass = 'bg-[#3F2D54] text-[#B388EB]'; // Viola
+if (item.prof === 'Non specificato') profClass = 'bg-[#4A2424] text-[#ECA2A2]'; // Rosso opaco
 
-        // Colore dinamico per il corso
-        const corsoClass = item.corso === 'CLEA C' 
-            ? 'bg-[#1F3B4D] text-[#5CA3E6]' 
-            : 'bg-[#3F2D54] text-[#B388EB]';
+// Colore dinamico per il corso
+let corsoClass = 'bg-[#252525] text-gray-400 border border-[#3F3F3F]';
+if (item.corso === 'CLEA C') corsoClass = 'bg-[#1F3B4D] text-[#5CA3E6]';
+if (item.corso === 'CLEA A') corsoClass = 'bg-[#1C3D27] text-[#52BA6F]';
+if (item.corso === 'CLEA B') corsoClass = 'bg-[#3F2D54] text-[#B388EB]';
+if (item.corso === 'SCAMS' || item.corso === 'SCAMS C') corsoClass = 'bg-[#5C4033] text-[#E1A95F]';
 
         // Genera il blocco HTML della riga corrente
         righeHTML += `
