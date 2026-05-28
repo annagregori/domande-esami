@@ -134,5 +134,16 @@ function applicaFiltri() {
 document.getElementById('filter-prof').addEventListener('change', applicaFiltri);
 document.getElementById('filter-corso').addEventListener('change', applicaFiltri);
 
+// All'apertura della pagina, controlla se nell'URL c'è scritto "?materia=politica-economica"
+window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const materia = params.get('materia');
+
+    if (materia === 'politica-economica') {
+        // Forza il sito a caricare la pagina e il JSON di politica economica
+        caricaMateria('politica-economica'); // Sostituisci con la tua funzione reale che scambia le pagine
+    }
+});
+
 // Avvia il sito
 inizializzaSito();
