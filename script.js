@@ -10,8 +10,17 @@ async function inizializzaSito() {
         
         renderMenu(pagine);
         
-        // Carica la prima pagina dell'elenco come predefinita
-        if(pagine.length > 0) {
+        // Controlla se nell'URL c'è un parametro specifico (es. ?materia=politica-economica)
+        const params = new URLSearchParams(window.location.search);
+        const materiaUrl = params.get('materia');
+        
+        const paginaTrovata = pagine.find(p => p.id === materiaUrl);
+
+        if (paginaTrovata) {
+            // Se l'URL richiede una materia specifica, carica quella
+            cambiaPagina(paginaTrovata.id, paginaTrovata.titolo);
+        } else if (pagine.length > 0) {
+            // Altrimenti carica la prima pagina dell'elenco come predefinita
             cambiaPagina(pagine[0].id, pagine[0].titolo);
         }
     } catch (error) {
@@ -47,14 +56,19 @@ async function cambiaPagina(idPagina, titoloPagina) {
     const itemAttivo = document.getElementById(`menu-item-${idPagina}`);
     if(itemAttivo) itemAttivo.classList.add('active');
 
-    // Resetta i filtri select a "Tutti" quando cambi materia
-    document.getElementById('filter-prof').value = 'all';
-    document.getElementById('filter-corso').value = 'all';
-
     try {
         // Carica il file JSON specifico (es: politica-economica.json)
         const responseDati = await fetch(`./${idPagina}.json`);
         elencoDomande = await responseDati.json();
+        
+        // PASSO 3: Aggiorna dinamicamente i filtri in base ai dati della materia appena caricata
+        aggiornaOpzioniFiltri(elencoDomande);
+
+        // Resetta i filtri select a "Tutti" dopo averli rigenerati
+        document.getElementById('filter-prof').value = 'all';
+        document.getElementById('filter-corso').value = 'all';
+        
+        // Disegna la tabella
         renderTabella(elencoDomande);
     } catch (error) {
         console.error(`Errore nel caricare i dati della pagina ${idPagina}:`, error);
@@ -62,11 +76,45 @@ async function cambiaPagina(idPagina, titoloPagina) {
     }
 }
 
-// 4. Mostra i dati effettivi (Identica a prima)
+// Funzione di supporto per generare i filtri dinamici senza duplicati
+function aggiornaOpzioniFiltri(datiMateria) {
+    const selectProf = document.getElementById('filter-prof');
+    const selectCorso = document.getElementById('filter-corso');
+
+    // Svuota le vecchie opzioni mantenendo solo "Tutti"
+    selectProf.innerHTML = '<option value="all">Tutti</option>';
+    selectCorso.innerHTML = '<option value="all">Tutti</option>';
+
+    // Set estrae solo i valori unici (elimina i duplicati)
+    const professoriUnici = [...new Set(datiMateria.map(item => item.prof))].sort();
+    const corsiUnici = [...new Set(datiMateria.map(item => item.corso))].sort();
+
+    // Inserisce i nuovi professori nel menù a tendina
+    professoriUnici.forEach(prof => {
+        if(prof) { 
+            const option = document.createElement('option');
+            option.value = prof;
+            option.textContent = prof;
+            selectProf.appendChild(option);
+        }
+    });
+
+    // Inserisce i nuovi corsi nel menù a tendina
+    corsiUnici.forEach(corso => {
+        if(corso) { 
+            const option = document.createElement('option');
+            option.value = corso;
+            option.textContent = corso;
+            selectCorso.appendChild(option);
+        }
+    });
+}
+
+// 4. Mostra i dati effettivi
 function renderTabella(data) {
     const tbody = document.getElementById('table-body');
     
-    // 1. Svuota la tabella prima di inserire i nuovi dati
+    // Svuota la tabella prima di inserire i nuovi dati
     tbody.innerHTML = '';
 
     if (data.length === 0) {
@@ -74,23 +122,23 @@ function renderTabella(data) {
         return;
     }
 
-    // 2. Accumula tutte le righe in una stringa di testo
+    // Accumula tutte le righe in una stringa di testo
     let righeHTML = '';
 
     data.forEach(item => {
-        // Colore dinamico per i professori (assegna un colore a ciascuno o un grigio neutro di default)
-let profClass = 'bg-[#2F2F2F] text-gray-300'; // Grigio neutro per gli altri
-if (item.prof === 'Imbert') profClass = 'bg-[#1C3D27] text-[#52BA6F]';  // Verde
-if (item.prof === 'Morone') profClass = 'bg-[#1F3B4D] text-[#5CA3E6]';  // Blu
-if (item.prof === 'Bonelli') profClass = 'bg-[#3F2D54] text-[#B388EB]'; // Viola
-if (item.prof === 'Non specificato') profClass = 'bg-[#4A2424] text-[#ECA2A2]'; // Rosso opaco
+        // Colore dinamico per i professori
+        let profClass = 'bg-[#2F2F2F] text-gray-300'; 
+        if (item.prof === 'Imbert') profClass = 'bg-[#1C3D27] text-[#52BA6F]';  
+        if (item.prof === 'Morone') profClass = 'bg-[#1F3B4D] text-[#5CA3E6]';  
+        if (item.prof === 'Bonelli') profClass = 'bg-[#3F2D54] text-[#B388EB]'; 
+        if (item.prof === 'Non specificato') profClass = 'bg-[#4A2424] text-[#ECA2A2]'; 
 
-// Colore dinamico per il corso
-let corsoClass = 'bg-[#252525] text-gray-400 border border-[#3F3F3F]';
-if (item.corso === 'CLEA C') corsoClass = 'bg-[#1F3B4D] text-[#5CA3E6]';
-if (item.corso === 'CLEA A') corsoClass = 'bg-[#1C3D27] text-[#52BA6F]';
-if (item.corso === 'CLEA B') corsoClass = 'bg-[#3F2D54] text-[#B388EB]';
-if (item.corso === 'SCAMS' || item.corso === 'SCAMS C') corsoClass = 'bg-[#5C4033] text-[#E1A95F]';
+        // Colore dinamico per il corso
+        let corsoClass = 'bg-[#252525] text-gray-400 border border-[#3F3F3F]';
+        if (item.corso === 'CLEA C') corsoClass = 'bg-[#1F3B4D] text-[#5CA3E6]';
+        if (item.corso === 'CLEA A') corsoClass = 'bg-[#1C3D27] text-[#52BA6F]';
+        if (item.corso === 'CLEA B') corsoClass = 'bg-[#3F2D54] text-[#B388EB]';
+        if (item.corso === 'SCAMS' || item.corso === 'SCAMS C') corsoClass = 'bg-[#5C4033] text-[#E1A95F]';
 
         // Genera il blocco HTML della riga corrente
         righeHTML += `
@@ -113,11 +161,11 @@ if (item.corso === 'SCAMS' || item.corso === 'SCAMS C') corsoClass = 'bg-[#5C403
         `;
     });
 
-    // 3. Inserisce tutte le righe insieme all'interno del corpo della tabella
+    // Inserisce tutte le righe insieme all'interno del corpo della tabella
     tbody.innerHTML = righeHTML;
 }
 
-// 5. Gestione filtri (Identica a prima)
+// 5. Gestione filtri
 function applicaFiltri() {
     const profScelto = document.getElementById('filter-prof').value;
     const corsoScelto = document.getElementById('filter-corso').value;
@@ -134,46 +182,5 @@ function applicaFiltri() {
 document.getElementById('filter-prof').addEventListener('change', applicaFiltri);
 document.getElementById('filter-corso').addEventListener('change', applicaFiltri);
 
-// All'apertura della pagina, controlla se nell'URL c'è scritto "?materia=politica-economica"
-window.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const materia = params.get('materia');
-
-    if (materia === 'politica-economica') {
-        // Forza il sito a caricare la pagina e il JSON di politica economica
-        caricaMateria('politica-economica'); // Sostituisci con la tua funzione reale che scambia le pagine
-    }
-    function aggiornaOpzioniFiltri(datiMateria) {
-    const selectProf = document.getElementById('filter-prof');
-    const selectCorso = document.getElementById('filter-corso');
-
-    // Svuota le vecchie opzioni mantenendo solo "Tutti"
-    selectProf.innerHTML = '<option value="all">Tutti</option>';
-    selectCorso.innerHTML = '<option value="all">Tutti</option>';
-
-    // Set estrae solo i valori unici (elimina i duplicati)
-    const professoriUnici = [...new Set(datiMateria.map(item => item.prof))].sort();
-    const corsiUnici = [...new Set(datiMateria.map(item => item.corso))].sort();
-
-    // Inserisce i nuovi professori nel menù a tendina
-    professoriUnici.forEach(prof => {
-        if(prof) { // Evita valori vuoti
-            const option = document.createElement('option');
-            option.value = prof;
-            option.textContent = prof;
-            selectProf.appendChild(option);
-        }
-    });
-
-    // Inserisce i nuovi corsi nel menù a tendina
-    corsiUnici.forEach(corso => {
-        if(corso) { // Evita valori vuoti
-            const option = document.createElement('option');
-            option.value = corso;
-            option.textContent = corso;
-            selectCorso.appendChild(option);
-        }
-    });
-
-// Avvia il sito
-inizializzaSito();
+// Inizializza il sito al caricamento della pagina
+window.addEventListener('DOMContentLoaded', inizializzaSito);
