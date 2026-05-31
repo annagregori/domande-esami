@@ -143,7 +143,37 @@ window.addEventListener('DOMContentLoaded', () => {
         // Forza il sito a caricare la pagina e il JSON di politica economica
         caricaMateria('politica-economica'); // Sostituisci con la tua funzione reale che scambia le pagine
     }
-});
+    function aggiornaOpzioniFiltri(datiMateria) {
+    const selectProf = document.getElementById('filter-prof');
+    const selectCorso = document.getElementById('filter-corso');
+
+    // Svuota le vecchie opzioni mantenendo solo "Tutti"
+    selectProf.innerHTML = '<option value="all">Tutti</option>';
+    selectCorso.innerHTML = '<option value="all">Tutti</option>';
+
+    // Set estrae solo i valori unici (elimina i duplicati)
+    const professoriUnici = [...new Set(datiMateria.map(item => item.prof))].sort();
+    const corsiUnici = [...new Set(datiMateria.map(item => item.corso))].sort();
+
+    // Inserisce i nuovi professori nel menù a tendina
+    professoriUnici.forEach(prof => {
+        if(prof) { // Evita valori vuoti
+            const option = document.createElement('option');
+            option.value = prof;
+            option.textContent = prof;
+            selectProf.appendChild(option);
+        }
+    });
+
+    // Inserisce i nuovi corsi nel menù a tendina
+    corsiUnici.forEach(corso => {
+        if(corso) { // Evita valori vuoti
+            const option = document.createElement('option');
+            option.value = corso;
+            option.textContent = corso;
+            selectCorso.appendChild(option);
+        }
+    });
 
 // Avvia il sito
 inizializzaSito();
