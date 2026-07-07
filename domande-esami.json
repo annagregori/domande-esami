@@ -3,6 +3,21 @@
     "domanda": "Sostenibilità",
     "prof": "Imbert",
     "corso": "CLEA C",
-    "data": "13/11/2025"
+    "data": "13/11/2025",
+    "parte": "Prima parte"
+  },
+  {
+    "domanda": "IS LM",
+    "prof": "Imbert",
+    "corso": "CLEA C",
+    "data": "13/11/2025",
+    "parte": "Seconda parte"
+  },
+  {
+    "domanda": "Curva di Philips",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "17/12/2025",
+    "parte": "Intero"
   }
 ]
