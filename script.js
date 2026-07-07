@@ -67,12 +67,13 @@ async function cambiaPagina(idPagina, titoloPagina) {
         // Resetta i filtri select a "Tutti" dopo averli rigenerati
         document.getElementById('filter-prof').value = 'all';
         document.getElementById('filter-corso').value = 'all';
+        document.getElementById('filter-parte').value = 'all'; // Reset del nuovo filtro
         
         // Disegna la tabella
         renderTabella(elencoDomande);
     } catch (error) {
         console.error(`Errore nel caricare i dati della pagina ${idPagina}:`, error);
-        document.getElementById('table-body').innerHTML = `<tr><td colspan="4" class="p-4 text-center text-red-400">Impossibile trovare il file ${idPagina}.json</td></tr>`;
+        document.getElementById('table-body').innerHTML = `<tr><td colspan="5" class="p-4 text-center text-red-400">Impossibile trovare il file ${idPagina}.json</td></tr>`;
     }
 }
 
@@ -118,7 +119,7 @@ function renderTabella(data) {
     tbody.innerHTML = '';
 
     if (data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="4" class="p-4 text-center text-gray-500">Nessun risultato trovato</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="5" class="p-4 text-center text-gray-500">Nessun risultato trovato</td></tr>`;
         return;
     }
 
@@ -140,7 +141,10 @@ function renderTabella(data) {
         if (item.corso === 'CLEA B') corsoClass = 'bg-[#3F2D54] text-[#B388EB]';
         if (item.corso === 'SCAMS' || item.corso === 'SCAMS C') corsoClass = 'bg-[#5C4033] text-[#E1A95F]';
 
-        // Genera il blocco HTML della riga corrente
+        // Valore predefinito se la proprietà "parte" manca nel file JSON
+        const parteEsame = item.parte || 'Intero';
+
+        // Genera il blocco HTML della riga corrente (aggiornato a 5 colonne)
         righeHTML += `
             <tr class="hover:bg-[#202020] transition-colors border-b border-[#2A2A2A]">
                 <td class="p-3 flex items-center gap-2 text-gray-200">
@@ -156,6 +160,9 @@ function renderTabella(data) {
                         ${item.corso}
                     </span>
                 </td>
+                <td class="p-3 text-gray-400 text-sm">
+                    ${parteEsame}
+                </td>
                 <td class="p-3 text-gray-400">${item.data}</td>
             </tr>
         `;
@@ -169,11 +176,17 @@ function renderTabella(data) {
 function applicaFiltri() {
     const profScelto = document.getElementById('filter-prof').value;
     const corsoScelto = document.getElementById('filter-corso').value;
+    const parteScelta = document.getElementById('filter-parte').value; // Lettura del nuovo filtro
 
     const datiFiltrati = elencoDomande.filter(item => {
         const matchProf = profScelto === 'all' || item.prof === profScelto;
         const matchCorso = corsoScelto === 'all' || item.corso === corsoScelto;
-        return matchProf && matchCorso;
+        
+        // Controllo della parte d'esame (se la proprietà non c'è, assume sia 'Intero')
+        const parteItem = item.parte || 'Intero';
+        const matchParte = parteScelta === 'all' || parteItem === parteScelta;
+        
+        return matchProf && matchCorso && matchParte;
     });
 
     renderTabella(datiFiltrati);
@@ -181,6 +194,7 @@ function applicaFiltri() {
 
 document.getElementById('filter-prof').addEventListener('change', applicaFiltri);
 document.getElementById('filter-corso').addEventListener('change', applicaFiltri);
+document.getElementById('filter-parte').addEventListener('change', applicaFiltri); // Listener per il nuovo filtro
 
 // Inizializza il sito al caricamento della pagina
 window.addEventListener('DOMContentLoaded', inizializzaSito);
