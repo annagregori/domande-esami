@@ -31,26 +31,21 @@
             <h1 id="page-title" class="text-3xl font-bold mb-6 flex items-center gap-2">Caricamento...</h1>
 
             <div class="flex flex-wrap gap-4 mb-6 bg-[#202020] p-4 rounded-lg border border-[#2A2A2A]">
-                <!-- Filtro Professore -->
                 <div>
                     <label for="filter-prof" class="block text-xs text-gray-400 mb-1 font-medium">Professore</label>
                     <select id="filter-prof" class="bg-[#2F2F2F] text-sm text-white rounded px-3 py-1.5 outline-none border border-[#3F3F3F] cursor-pointer">
                         <option value="all">Tutti</option>
-                        <!-- Le opzioni verranno inserite qui da JavaScript -->
-                    </select>
+                        </select>
                 </div>
 
-                <!-- Filtro Corso di studi -->
                 <div>
                     <label for="filter-corso" class="block text-xs text-gray-400 mb-1 font-medium">Corso di studi</label>
                     <select id="filter-corso" class="bg-[#2F2F2F] text-sm text-white rounded px-3 py-1.5 outline-none border border-[#3F3F3F] cursor-pointer">
                         <option value="all">Tutti</option>
-                        <!-- Le opzioni verranno inserite qui da JavaScript -->
-                    </select>
+                        </select>
                 </div>
 
-                <!-- Filtro Parte d'esame -->
-                <div>
+                <div id="box-filtro-parte" class="hidden">
                     <label for="filter-parte" class="block text-xs text-gray-400 mb-1 font-medium">Parte d'esame</label>
                     <select id="filter-parte" class="bg-[#2F2F2F] text-sm text-white rounded px-3 py-1.5 outline-none border border-[#3F3F3F] cursor-pointer">
                         <option value="all">Tutti</option>
