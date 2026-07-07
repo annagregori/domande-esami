@@ -1,23 +1,284 @@
 [
   {
-    "domanda": "Sostenibilità",
-    "prof": "Imbert",
-    "corso": "CLEA C",
-    "data": "13/11/2025",
-    "parte": "Prima parte"
+    "domanda": "Liquidazione nelle società di capitali",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "24/06/2026"
   },
   {
-    "domanda": "IS LM",
-    "prof": "Imbert",
-    "corso": "CLEA C",
-    "data": "13/11/2025",
-    "parte": "Seconda parte"
+    "domanda": "Recesso del socio nelle società di persone",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "24/06/2026"
   },
   {
-    "domanda": "Curva di Philips",
-    "prof": "Non specificato",
-    "corso": "Non specificato",
-    "data": "17/12/2025",
-    "parte": "Intero"
+    "domanda": "Patrimonio sociale",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "24/06/2026"
+  },
+  {
+    "domanda": "Institore",
+    "prof": "Martucci",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Effetti della liquidazione giudiziale per il debitore",
+    "prof": "Martucci",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
   }
+[
+  {
+    "domanda": "Costituzione in sdp e sdc",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Disciplina del conflitto di interessi amministratori e disciplina conflitto di interessi soci",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Trasformazione",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Conferimenti SP e SC",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Invalidità delle delibere del CdA",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Nullità e annullabilità assemblea",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "La responsabilità degli amministratori nella spa",
+    "prof": "Non specificato",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "I conferimenti per la spa",
+    "prof": "Non specificato",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Le differenze di queste due (responsabilità e conferimenti spa) rispetto alla srl",
+    "prof": "Non specificato",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Azione sociale di responsabilità",
+    "prof": "Martucci",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Imprenditore agricolo",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Composizione negoziata",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Eccezioni personali",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Assemblee soci srl semplificazioni",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Aumento capitale sociale a titolo gratuito e oneroso",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Società di capitali capitale sociale",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Società di capitale unipersonali - vincoli versamento c.s + pubblicità",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Semplificazione assemblee dei soci nelle unipersonali",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Inesistenza società persone unipersonali",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "I gruppi di società (controllata e controllante)",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Differenza azioni e quote",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Come si trasferiscono le quote",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Srl semplice, confronto con srl normale (specifico su conferimenti e riserve)",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Sas (Società in accomandita semplice)",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Nullità spa",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Girata",
+    "prof": "Martucci",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Trasferimento dell'azienda",
+    "prof": "Martucci",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Contratti in fase di trasferimento azienda",
+    "prof": "Martucci",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Collegio sindacale srl/spa (nel dettaglio)",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Morte/recesso/esclusione del socio in società di persone",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Deleghe del cda",
+    "prof": "Martucci",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Rappresentanza nelle sdp",
+    "prof": "Martucci",
+    "corso": "Diritto commerciale",
+    "parte": "Seconda parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Azione revocatoria",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Registro delle imprese",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  },
+  {
+    "domanda": "Titoli all'ordine e girata",
+    "prof": "Masi",
+    "corso": "Diritto commerciale",
+    "parte": "Prima parte",
+    "data": "25/06/2026"
+  }
+]
 ]
