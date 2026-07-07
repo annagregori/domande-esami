@@ -56,18 +56,29 @@ async function cambiaPagina(idPagina, titoloPagina) {
     const itemAttivo = document.getElementById(`menu-item-${idPagina}`);
     if(itemAttivo) itemAttivo.classList.add('active');
 
+    // --- MOSTRA IL FILTRO PARTE SOLO SU POLITICA ECONOMICA ---
+    const boxFiltroParte = document.getElementById('box-filtro-parte');
+    if (boxFiltroParte) {
+        if (idPagina === 'domande-esami') {
+            boxFiltroParte.classList.remove('hidden');
+        } else {
+            boxFiltroParte.classList.add('hidden');
+        }
+    }
+    // --------------------------------------------------------
+
     try {
         // Carica il file JSON specifico (es: politica-economica.json)
         const responseDati = await fetch(`./${idPagina}.json`);
         elencoDomande = await responseDati.json();
         
-        // PASSO 3: Aggiorna dinamicamente i filtri in base ai dati della materia appena caricata
+        // Aggiorna dinamicamente i filtri in base ai dati della materia appena caricata
         aggiornaOpzioniFiltri(elencoDomande);
 
         // Resetta i filtri select a "Tutti" dopo averli rigenerati
         document.getElementById('filter-prof').value = 'all';
         document.getElementById('filter-corso').value = 'all';
-        document.getElementById('filter-parte').value = 'all'; // Reset del nuovo filtro
+        document.getElementById('filter-parte').value = 'all'; // Reset automatico del filtro parte
         
         // Disegna la tabella
         renderTabella(elencoDomande);
@@ -176,13 +187,13 @@ function renderTabella(data) {
 function applicaFiltri() {
     const profScelto = document.getElementById('filter-prof').value;
     const corsoScelto = document.getElementById('filter-corso').value;
-    const parteScelta = document.getElementById('filter-parte').value; // Lettura del nuovo filtro
+    const parteScelta = document.getElementById('filter-parte').value;
 
     const datiFiltrati = elencoDomande.filter(item => {
         const matchProf = profScelto === 'all' || item.prof === profScelto;
         const matchCorso = corsoScelto === 'all' || item.corso === corsoScelto;
         
-        // Controllo della parte d'esame (se la proprietà non c'è, assume sia 'Intero')
+        // Controllo della parte d'esame
         const parteItem = item.parte || 'Intero';
         const matchParte = parteScelta === 'all' || parteItem === parteScelta;
         
@@ -194,7 +205,7 @@ function applicaFiltri() {
 
 document.getElementById('filter-prof').addEventListener('change', applicaFiltri);
 document.getElementById('filter-corso').addEventListener('change', applicaFiltri);
-document.getElementById('filter-parte').addEventListener('change', applicaFiltri); // Listener per il nuovo filtro
+document.getElementById('filter-parte').addEventListener('change', applicaFiltri);
 
 // Inizializza il sito al caricamento della pagina
 window.addEventListener('DOMContentLoaded', inizializzaSito);
