@@ -142,7 +142,9 @@ function renderTabella(data) {
         let profClass = 'bg-[#2F2F2F] text-gray-300'; 
         if (item.prof === 'Imbert') profClass = 'bg-[#1C3D27] text-[#52BA6F]';  
         if (item.prof === 'Morone') profClass = 'bg-[#1F3B4D] text-[#5CA3E6]';  
-        if (item.prof === 'Bonelli') profClass = 'bg-[#3F2D54] text-[#B388EB]'; 
+        if (item.prof === 'Bonelli') profClass = 'bg-[#3F2D54] text-[#B388EB]';
+        if (item.prof === 'Masi') profClass = 'bg-[#4C3A23] text-[#E1A95F]'; // Colore Ambra/Bronzo
+        if (item.prof === 'Martucci') profClass = 'bg-[#1F3A44] text-[#4EBABA]'; // Colore Cyan/Ottanio
         if (item.prof === 'Non specificato') profClass = 'bg-[#4A2424] text-[#ECA2A2]'; 
 
         // Colore dinamico per il corso
