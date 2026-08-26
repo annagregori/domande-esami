@@ -10,21 +10,27 @@ async function inizializzaSito() {
         
         renderMenu(pagine);
         
-        // Controlla se nell'URL c'è un parametro specifico (es. ?materia=politica-economica)
-        const params = new URLSearchParams(window.location.search);
-        const materiaUrl = params.get('materia');
-        
-        const paginaTrovata = pagine.find(p => p.id === materiaUrl);
+        // Carica la materia corrispondente all'URL corrente (o la prima di default)
+        caricaMateriaDaURL(pagine);
 
-        if (paginaTrovata) {
-            // Se l'URL richiede una materia specifica, carica quella
-            cambiaPagina(paginaTrovata.id, paginaTrovata.titolo);
-        } else if (pagine.length > 0) {
-            // Altrimenti carica la prima pagina dell'elenco come predefinita
-            cambiaPagina(pagine[0].id, pagine[0].titolo);
-        }
     } catch (error) {
         console.error("Errore nell'inizializzazione:", error);
+    }
+}
+
+// Funzione di supporto per leggere il parametro 'materia' dall'URL e cambiare pagina
+function caricaMateriaDaURL(pagine) {
+    const params = new URLSearchParams(window.location.search);
+    const materiaUrl = params.get('materia');
+    
+    const paginaTrovata = pagine.find(p => p.id === materiaUrl);
+
+    if (paginaTrovata) {
+        // Se l'URL richiede una materia specifica, carica quella (senza pushState extra)
+        cambiaPagina(paginaTrovata.id, paginaTrovata.titolo, false);
+    } else if (pagine.length > 0) {
+        // Altrimenti carica la prima pagina dell'elenco come predefinita
+        cambiaPagina(pagine[0].id, pagine[0].titolo, false);
     }
 }
 
@@ -39,17 +45,23 @@ function renderMenu(pagine) {
         link.innerHTML = pag.titolo;
         link.id = `menu-item-${pag.id}`;
         
-        // Al click cambia il database visualizzato
-        link.onclick = () => cambiaPagina(pag.id, pag.titolo);
+        // Al click cambia il database visualizzato e aggiorna l'URL
+        link.onclick = () => cambiaPagina(pag.id, pag.titolo, true);
         
         menuContainer.appendChild(link);
     });
 }
 
 // 3. Cambia i dati visibili nella tabella in base alla pagina scelta
-async function cambiaPagina(idPagina, titoloPagina) {
+async function cambiaPagina(idPagina, titoloPagina, aggiornaURL = true) {
     paginaCorrente = idPagina;
     document.getElementById('page-title').innerHTML = titoloPagina;
+
+    // --- AGGIORNAMENTO URL DINAMICO ---
+    if (aggiornaURL) {
+        const nuovoUrl = `${window.location.pathname}?materia=${encodeURIComponent(idPagina)}`;
+        window.history.pushState({ id: idPagina, titolo: titoloPagina }, '', nuovoUrl);
+    }
 
     // Gestione della classe .active estetica nel menu
     document.querySelectorAll('.sidebar-item').forEach(item => item.classList.remove('active'));
@@ -208,6 +220,17 @@ function applicaFiltri() {
 document.getElementById('filter-prof').addEventListener('change', applicaFiltri);
 document.getElementById('filter-corso').addEventListener('change', applicaFiltri);
 document.getElementById('filter-parte').addEventListener('change', applicaFiltri);
+
+// Gestione dei tasti Avanti / Indietro del browser
+window.addEventListener('popstate', async () => {
+    try {
+        const responseMenu = await fetch('./menu.json');
+        const pagine = await responseMenu.json();
+        caricaMateriaDaURL(pagine);
+    } catch(e) {
+        console.error("Errore nel ripristino dell'URL:", e);
+    }
+});
 
 // Inizializza il sito al caricamento della pagina
 window.addEventListener('DOMContentLoaded', inizializzaSito);
