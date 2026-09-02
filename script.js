@@ -1,17 +1,18 @@
 let elencoDomande = [];
 let paginaCorrente = "";
+let elencoPagine = []; // Salviamo le pagine per poterle raggruppare in Home
 
 // 1. Inizializzazione del sito
 async function inizializzaSito() {
     try {
         // Carica l'indice delle pagine per il menu laterale
         const responseMenu = await fetch('./menu.json');
-        const pagine = await responseMenu.json();
+        elencoPagine = await responseMenu.json();
         
-        renderMenu(pagine);
+        renderMenu(elencoPagine);
         
         // Carica la materia corrispondente all'URL corrente (o la prima di default)
-        caricaMateriaDaURL(pagine);
+        caricaMateriaDaURL(elencoPagine);
 
     } catch (error) {
         console.error("Errore nell'inizializzazione:", error);
@@ -52,7 +53,7 @@ function renderMenu(pagine) {
     });
 }
 
-// 3. Cambia i dati visibili nella tabella in base alla pagina scelta
+// 3. CAMBIA PAGINA (Gestione alternata tra Home e Tabella Materia)
 async function cambiaPagina(idPagina, titoloPagina, aggiornaURL = true) {
     paginaCorrente = idPagina;
     document.getElementById('page-title').innerHTML = titoloPagina;
@@ -68,36 +69,92 @@ async function cambiaPagina(idPagina, titoloPagina, aggiornaURL = true) {
     const itemAttivo = document.getElementById(`menu-item-${idPagina}`);
     if(itemAttivo) itemAttivo.classList.add('active');
 
-    // --- MOSTRA IL FILTRO PARTE SOLO SU POLITICA ECONOMICA ---
+    const homeView = document.getElementById('home-view');
+    const materiaView = document.getElementById('materia-view');
+
+    // --- CASO 1: SE SELEZIONATA LA HOME ---
+    if (idPagina === 'home') {
+        if (materiaView) materiaView.classList.add('hidden');
+        if (homeView) {
+            homeView.classList.remove('hidden');
+            renderHome(elencoPagine);
+        }
+        return;
+    }
+
+    // --- CASO 2: SE SELEZIONATA UNA MATERIA SINGOLA ---
+    if (homeView) homeView.classList.add('hidden');
+    if (materiaView) materiaView.classList.remove('hidden');
+
+    // Mostra il filtro parte solo per la pagina specificata
     const boxFiltroParte = document.getElementById('box-filtro-parte');
     if (boxFiltroParte) {
-        if (idPagina === 'domande-esami') {
+        if (idPagina === 'politica-economica' || idPagina === 'domande-esami') {
             boxFiltroParte.classList.remove('hidden');
         } else {
             boxFiltroParte.classList.add('hidden');
         }
     }
-    // --------------------------------------------------------
 
     try {
-        // Carica il file JSON specifico (es: politica-economica.json)
+        // Carica il file JSON della materia
         const responseDati = await fetch(`./${idPagina}.json`);
         elencoDomande = await responseDati.json();
         
-        // Aggiorna dinamicamente i filtri in base ai dati della materia appena caricata
+        // Aggiorna e resetta i filtri
         aggiornaOpzioniFiltri(elencoDomande);
-
-        // Resetta i filtri select a "Tutti" dopo averli rigenerati
         document.getElementById('filter-prof').value = 'all';
         document.getElementById('filter-corso').value = 'all';
-        document.getElementById('filter-parte').value = 'all'; // Reset automatico del filtro parte
+        if (document.getElementById('filter-parte')) {
+            document.getElementById('filter-parte').value = 'all';
+        }
         
-        // Disegna la tabella
+        // Genera la tabella
         renderTabella(elencoDomande);
     } catch (error) {
         console.error(`Errore nel caricare i dati della pagina ${idPagina}:`, error);
         document.getElementById('table-body').innerHTML = `<tr><td colspan="5" class="p-4 text-center text-red-400">Impossibile trovare il file ${idPagina}.json</td></tr>`;
     }
+}
+
+// Funzione ausiliaria per generare la Home organizzata per Anno Accademico
+function renderHome(pagine) {
+    const homeView = document.getElementById('home-view');
+    if (!homeView) return;
+
+    // Filtra per escludere la pagina "Home" stessa
+    const materie = pagine.filter(p => p.id !== 'home');
+
+    // Raggruppa le materie per la chiave "anno"
+    const perAnno = materie.reduce((acc, materia) => {
+        const anno = materia.anno || 'Altre materie';
+        if (!acc[anno]) acc[anno] = [];
+        acc[anno].push(materia);
+        return acc;
+    }, {});
+
+    // Genera l'HTML dinamico a griglia
+    let html = `<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6 pt-6 border-t border-[#2A2A2A]">`;
+
+    for (const [anno, listaMaterie] of Object.entries(perAnno)) {
+        html += `
+            <div>
+                <h2 class="text-xl font-semibold mb-4 text-white">${anno}</h2>
+                <ul class="space-y-3">
+                    ${listaMaterie.map(m => `
+                        <li>
+                            <button onclick="cambiaPagina('${m.id}', '${m.titolo}')" class="text-gray-400 hover:text-white underline underline-offset-4 decoration-gray-600 hover:decoration-white transition-colors text-left cursor-pointer">
+                                ${m.titolo}
+                            </button>
+                        </li>
+                    `).join('')}
+                </ul>
+            </div>
+        `;
+    }
+
+    html += `</div>`;
+    homeView.innerHTML = html;
 }
 
 // Funzione di supporto per generare i filtri dinamici senza duplicati
@@ -155,8 +212,8 @@ function renderTabella(data) {
         if (item.prof === 'Imbert') profClass = 'bg-[#1C3D27] text-[#52BA6F]';  
         if (item.prof === 'Morone') profClass = 'bg-[#1F3B4D] text-[#5CA3E6]';  
         if (item.prof === 'Bonelli') profClass = 'bg-[#3F2D54] text-[#B388EB]';
-        if (item.prof === 'Masi') profClass = 'bg-[#4C3A23] text-[#E1A95F]'; // Colore Ambra/Bronzo
-        if (item.prof === 'Martucci') profClass = 'bg-[#1F3A44] text-[#4EBABA]'; // Colore Cyan/Ottanio
+        if (item.prof === 'Masi') profClass = 'bg-[#4C3A23] text-[#E1A95F]';
+        if (item.prof === 'Martucci') profClass = 'bg-[#1F3A44] text-[#4EBABA]';
         if (item.prof === 'Non specificato') profClass = 'bg-[#4A2424] text-[#ECA2A2]'; 
 
         // Colore dinamico per il corso
@@ -169,7 +226,7 @@ function renderTabella(data) {
         // Valore predefinito se la proprietà "parte" manca nel file JSON
         const parteEsame = item.parte || 'Intero';
 
-        // Genera il blocco HTML della riga corrente (aggiornato a 5 colonne)
+        // Genera il blocco HTML della riga corrente
         righeHTML += `
             <tr class="hover:bg-[#202020] transition-colors border-b border-[#2A2A2A]">
                 <td class="p-3 flex items-center gap-2 text-gray-200">
@@ -201,7 +258,7 @@ function renderTabella(data) {
 function applicaFiltri() {
     const profScelto = document.getElementById('filter-prof').value;
     const corsoScelto = document.getElementById('filter-corso').value;
-    const parteScelta = document.getElementById('filter-parte').value;
+    const parteScelta = document.getElementById('filter-parte') ? document.getElementById('filter-parte').value : 'all';
 
     const datiFiltrati = elencoDomande.filter(item => {
         const matchProf = profScelto === 'all' || item.prof === profScelto;
@@ -219,7 +276,9 @@ function applicaFiltri() {
 
 document.getElementById('filter-prof').addEventListener('change', applicaFiltri);
 document.getElementById('filter-corso').addEventListener('change', applicaFiltri);
-document.getElementById('filter-parte').addEventListener('change', applicaFiltri);
+if (document.getElementById('filter-parte')) {
+    document.getElementById('filter-parte').addEventListener('change', applicaFiltri);
+}
 
 // Gestione dei tasti Avanti / Indietro del browser
 window.addEventListener('popstate', async () => {
@@ -231,6 +290,9 @@ window.addEventListener('popstate', async () => {
         console.error("Errore nel ripristino dell'URL:", e);
     }
 });
+
+// Inizializza il sito al caricamento della pagina
+window.addEventListener('DOMContentLoaded', inizializzaSito);
 
 // Inizializza il sito al caricamento della pagina
 window.addEventListener('DOMContentLoaded', inizializzaSito);
