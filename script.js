@@ -89,7 +89,8 @@ async function cambiaPagina(idPagina, titoloPagina, aggiornaURL = true) {
     // Mostra il filtro parte solo per la pagina specificata
     const boxFiltroParte = document.getElementById('box-filtro-parte');
     if (boxFiltroParte) {
-        if (idPagina === 'politica-economica' || idPagina === 'domande-esami') {
+        // Inserisci qui l'ID esatto della materia per cui vuoi attivare il filtro
+        if (idPagina === 'diritto-commerciale') {
             boxFiltroParte.classList.remove('hidden');
         } else {
             boxFiltroParte.classList.add('hidden');
