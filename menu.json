@@ -1,4 +1,5 @@
 [
+  { "id": "home", "titolo": "Home" },
   {"id": "politica-economica", "titolo": "📚 Politica economica"},
   {"id": "clea-2025-2026", "titolo": "🎓 CLEA 2025/2026"},
   {"id": "diritto-commerciale", "titolo": "Diritto commerciale"}
