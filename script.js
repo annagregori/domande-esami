@@ -127,7 +127,7 @@ function renderHome(pagine) {
 
     // Raggruppa le materie per la chiave "anno"
     const perAnno = materie.reduce((acc, materia) => {
-        const anno = materia.anno || 'Altre materie';
+        const anno = materia.anno || 'CLEA';
         if (!acc[anno]) acc[anno] = [];
         acc[anno].push(materia);
         return acc;
