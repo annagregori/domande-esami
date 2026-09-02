@@ -1,282 +1,611 @@
 [
   {
-    "domanda": "Liquidazione nelle società di capitali",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "24/06/2026"
-  },
-  {
-    "domanda": "Recesso del socio nelle società di persone",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "24/06/2026"
-  },
-  {
-    "domanda": "Patrimonio sociale",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "24/06/2026"
-  },
-  {
-    "domanda": "Institore",
+    "domanda": "l’imprenditore agricolo",
     "prof": "Martucci",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
     "parte": "Prima parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Effetti della liquidazione giudiziale per il debitore",
+    "domanda": "lo statuto generale e commerciale",
     "prof": "Martucci",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
     "parte": "Prima parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Costituzione in sdp e sdc",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Disciplina del conflitto di interessi amministratori e disciplina conflitto di interessi soci",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Trasformazione",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Conferimenti SP e SC",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Invalidità delle delibere del CdA",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Nullità e annullabilità assemblea",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "La responsabilità degli amministratori nella spa",
-    "prof": "Non specificato",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "I conferimenti per la spa",
-    "prof": "Non specificato",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Le differenze di queste due (responsabilità e conferimenti spa) rispetto alla srl",
-    "prof": "Non specificato",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Azione sociale di responsabilità",
+    "domanda": "a quali procedure concorsuali è esposto l’imprenditore agricolo",
     "prof": "Martucci",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Imprenditore agricolo",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
     "parte": "Prima parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Composizione negoziata",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Prima parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Eccezioni personali",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Prima parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Assemblee soci srl semplificazioni",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Aumento capitale sociale a titolo gratuito e oneroso",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Società di capitali capitale sociale",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Società di capitale unipersonali - vincoli versamento c.s + pubblicità",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Semplificazione assemblee dei soci nelle unipersonali",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Inesistenza società persone unipersonali",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "I gruppi di società (controllata e controllante)",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Differenza azioni e quote",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Come si trasferiscono le quote",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Srl semplice, confronto con srl normale (specifico su conferimenti e riserve)",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Sas (Società in accomandita semplice)",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Nullità spa",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
-    "parte": "Seconda parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Girata",
+    "domanda": "il decreto di ammortamento",
     "prof": "Martucci",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
     "parte": "Prima parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Trasferimento dell'azienda",
+    "domanda": "collegio sindacale",
     "prof": "Martucci",
-    "corso": "Diritto commerciale",
-    "parte": "Prima parte",
-    "data": "25/06/2026"
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Contratti in fase di trasferimento azienda",
+    "domanda": "sindaci e tutte le sotto domande tra cui i poteri",
     "prof": "Martucci",
-    "corso": "Diritto commerciale",
-    "parte": "Prima parte",
-    "data": "25/06/2026"
-  },
-  {
-    "domanda": "Collegio sindacale srl/spa (nel dettaglio)",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
     "parte": "Seconda parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Morte/recesso/esclusione del socio in società di persone",
+    "domanda": "Amministrazione Società di Persone",
     "prof": "Masi",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
     "parte": "Seconda parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Deleghe del cda",
+    "domanda": "Se l'amministrazione disgiunta/congiunta è prevista anche in altre società oltre a quelle di persone (s.r.l)",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "S.p.a unipersonale",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "nella amministrazione disgiunta gli altri soci-amministratori potevano opporsi",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Come e chi decide sulle opposizioni",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Nullità ed annullabilità della delibera assembleare nelle società di persone",
     "prof": "Martucci",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
     "parte": "Seconda parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Rappresentanza nelle sdp",
+    "domanda": "E nelle società di capitali?",
     "prof": "Martucci",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
     "parte": "Seconda parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Azione revocatoria",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
+    "domanda": "Consorzi con attività esterna",
+    "prof": "Martucci",
+    "corso": "Non specificato",
     "parte": "Prima parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Registro delle imprese",
-    "prof": "Masi",
-    "corso": "Diritto commerciale",
+    "domanda": "Sotto-domanda sulla responsabilità dei consorzi ed autonomia patrimoniale",
+    "prof": "Martucci",
+    "corso": "Non specificato",
     "parte": "Prima parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
   },
   {
-    "domanda": "Titoli all'ordine e girata",
+    "domanda": "Aumento del capitale sociale a pagamento e gratuito",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Sotto-domanda: se una società non ha adempiuto ai conferimenti può fare l'aumento a pagamento?",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Le azioni",
     "prof": "Masi",
-    "corso": "Diritto commerciale",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Tutti i tipi di azioni (categoria di azioni speciale, correlate ecc...)",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Titoli di credito in generale",
+    "prof": "Masi",
+    "corso": "Non specificato",
     "parte": "Prima parte",
-    "data": "25/06/2026"
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I requisiti della cambiale",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Amministrazione congiunta e disgiunta",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'ipotesi di amministrazione disgiunta nelle srl",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Piccolo imprenditore",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Imprenditore agricolo e attività connesse",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Registro delle imprese e sezioni",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Riduzione capitale sociale obbligatoria e facoltativa (S.P.A e S.R.L)",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Iscrizione registro delle imprese con le varie efficacie (dichiarativa, costitutiva, ecc.) e la pubblicità notizia",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Amministrazione disgiuntiva (S.N.C) e veto dei soci",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I titoli di credito (astrattezza, autonomia, letteralità)",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "S.R.L unipersonale e le differenze con la S.P.A unipersonale",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Scioglimento e liquidazione della S.P.A",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Nullità delibere assembleari s.p.a",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Le eccezioni opponibili nei titoli di credito",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I titoli di credito al portatore, all'ordine ed al nominativo",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I conferimenti nelle s.p.a e nella s.r.l",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "S.N.C e capitale sociale",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'imprenditore commerciale",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Le scritture contabili e l'efficacia probatoria",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il recesso nelle società di persone e di capitali",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I sistemi di amministrazione e controllo della S.P.A",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'azienda ed il trasferimento",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "La girata nei titoli di credito",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Le obbligazioni nella S.P.A",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Società in accomandita semplice (S.A.S) e soci accomandanti/accomandatari",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "S.A.P.A (Società in accomandita per azioni)",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il marchio e i requisiti di validità",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'institore e i suoi poteri",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il bilancio di esercizio nella S.P.A",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I patti parasociali",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'assegno bancario e circolare",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "La trasformazione, fusione e scissione di società",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Rappresentanza commerciale (procuratori e commessi)",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il diritto di opzione nelle S.P.A",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'esclusione del socio nella S.N.C",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Concorrenza sleale",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Società cooperative e scopo mutualistico",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il gruppo di società e la direzione e coordinamento",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I brevetti per invenzione industriale",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Assemblea dei soci nella S.P.A (ordinaria e straordinaria)",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Invalidità del contratto di società",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'avviamento ed il divieto di concorrenza nell'azienda",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I beni aziendali e la successione nei contratti",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I crediti e i debiti aziendali nel trasferimento d'azienda",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Responsabilità degli amministratori nella S.P.A",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'azione sociale di responsabilità promossa dai soci di minoranza",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Revisione legale dei conti",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I patrimoni destinati ad uno specifico affare",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "La cambiale tratta e il vaglia cambiario",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "L'avallo cambiario",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il pagamento ed il protesto della cambiale",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il beneficio di escussione nelle società di persone",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Capitale sociale e patrimonio sociale: differenze",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il socio d'opera nelle società di persone",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Patto leonino e il divieto nell'ordinamento italiano",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Controllo giudiziario sulla gestione ex art. 2409 c.c.",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "S.R.L. semplificata (S.R.L.S.)",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Decisioni dei soci nella S.R.L.",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Finanziamenti dei soci nella S.R.L.",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Operazioni straordinarie: la fusione eterogenea ed omogenea",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Ammortamento dei titoli di credito nominativi e all'ordine",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "I consorzi e le società consortili",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Ditta, insegna e marchio: la disciplina dei segni distintivi",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Il diritto d'autore e la tutela delle opere dell'ingegno",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Prima parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Scioglimento del singolo rapporto sociale (morte, recesso, esclusione)",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Società di fatto, società occulta e società apparente",
+    "prof": "Masi",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
+  },
+  {
+    "domanda": "Sopravvenienza e insussistenza di passività e attività nella liquidazione",
+    "prof": "Martucci",
+    "corso": "Non specificato",
+    "parte": "Seconda parte",
+    "data": "2026-06-24"
   }
 ]
