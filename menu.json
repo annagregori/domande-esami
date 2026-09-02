@@ -1,6 +1,5 @@
 [
   { "id": "home", "titolo": "Home" },
   {"id": "politica-economica", "titolo": "Politica economica"},
-  {"id": "clea-2025-2026", "titolo": "Economia politica"},
   {"id": "diritto-commerciale", "titolo": "Diritto commerciale"}
 ]
