@@ -1,5 +1,6 @@
 [
   { "id": "home", "titolo": "Home" },
   {"id": "politica-economica", "titolo": "Politica economica"},
-  {"id": "diritto-commerciale", "titolo": "Diritto commerciale"}
+  {"id": "diritto-commerciale", "titolo": "Diritto commerciale"},
+  {"id": "diritto-privato", "titolo": "Diritto privato"}
 ]
