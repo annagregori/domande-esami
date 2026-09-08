@@ -1,8 +1,1166 @@
 [
   {
-    "domanda": "TEST",
+    "domanda": "Prospetto fonti e impieghi",
     "prof": "Non specificato",
     "corso": "Non specificato",
-    "data": "25/05/2026"
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "Logistica delle scorte",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "struttura divisionale",
+    "prof": "Maggiore",
+    "corso": "CLEA A",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "vantaggio competitivo",
+    "prof": "Maggiore",
+    "corso": "CLEA A",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "strategie competitive",
+    "prof": "Maggiore",
+    "corso": "CLEA A",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "marketing",
+    "prof": "Maggiore",
+    "corso": "CLEA A",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "5 forze competitive",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "Struttura divisionale e funzionale",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "Funzione di Logistica",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "IT",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "10/02/2026"
+  },
+  {
+    "domanda": "definizione di impresa turistica",
+    "prof": "Cavacece",
+    "corso": "CLEA B",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Ciclo di vita della destinazione",
+    "prof": "Cavacece",
+    "corso": "CLEA B",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Dmo ruolo e caratteristiche",
+    "prof": "Cavacece",
+    "corso": "CLEA B",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Yield Management",
+    "prof": "Cavacece",
+    "corso": "CLEA B",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Stakeholder",
+    "prof": "Farfalla",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "gestione Finanziaria",
+    "prof": "Farfalla",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Indici di Redditività",
+    "prof": "Farfalla",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Barriere in entrata",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "la funzione amministrativa e del personale",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "gli indici di bilancio",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "teoria Maslow",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Matrice BCG",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Indici di redditività",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Stakeholder",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "la vita del prodotto",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Strategie di sviluppo dimensionale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Economie di scala",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Differenziazione applicata all’integrazione orizzontale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Balance scorecard",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "marketing",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "indici di liquidità",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "innovazioni tecnologiche",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "politica di prezzo",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "teoria delle 3 p",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "imprenditore e Manager",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "CSR",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Break Even Point con formula e grafico",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Beni elastici e anelastici",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Stakeholder",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "5 forze di Porter",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Leva del prezzo",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "BEP e formula",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Catena del valore",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Sostenibilità",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "CSR",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "impresa",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "marketing (4p)",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "ciclo vita prodotto",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "innovazione",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "indici (redditività/liquidità)",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "balanced scorecard",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "ROI e ROE",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "matrice BCG",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "question mark (che tipo di prodotto è)",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "marketing",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "4p del marketing",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "struttura organizzativa dell’impresa ( divisionale)",
+    "prof": "Non specificato",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "ruolo del marketing nella gestione",
+    "prof": "Non specificato",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "catena del valore",
+    "prof": "Non specificato",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "sostenibilità",
+    "prof": "Non specificato",
+    "corso": "CLEA C",
+    "data": "11/02/2026"
+  },
+  {
+    "domanda": "Analisi Swot",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "struttura divisionale",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "Struttura funzionale",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "Funzione Logistica",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "Economie di scala",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "Marketing le 4 P",
+    "prof": "D'Amico",
+    "corso": "CLEA A",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "economie di scala",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "strutture dell impresa, in particolare la funzionale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "teoria degli stakeholder",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "5 forze di porter",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "significato di sostenibilità",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "strategie competitive",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "vantaggi competitivi",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "economie di scala",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/03/2026"
+  },
+  {
+    "domanda": "scomposizione degli indici",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "sviluppo dimensionale",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "stakeholder",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "marketing mix",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "funzione finanziaria",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "5 forze di porter",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "logistica e scorte",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "sostenibilità",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Leadership di costo",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "catena del valore di porter",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "matrice BCG",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "teoria X Y",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "indici e margini strutturali e di liquidità",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "stakeholder",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Pianificazione strategica",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Business Plan",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Ciclo vita prodotto e grafico",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "ROI e in cosa si può scomporre",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "sostenibilità (triple bottom line)",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "4 P del mktg",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "gestione scorte magazzino",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Leva del prezzo",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "BEP e formula",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Indici redditività tutti",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Strategie competitive con esempi",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Elasticità della domanda",
+    "prof": "de Majo",
+    "corso": "CLEA A",
+    "data": "04/03/2025"
+  },
+  {
+    "domanda": "Stakeholders (teoria + differenza tra primari e secondari con esempi)",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "Matrice bcg",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "Indici di redditività",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "Organizzazione funzionale",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "Sistema direzionale e com'è cambiato nel tempo + sistema informativo",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "ESG e sostenibilità SROI e linee guida redazione bilancio sociale",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "sistema informativo",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "marketing mix prezzo",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "ROE",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/04/2026"
+  },
+  {
+    "domanda": "Prodotto",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "ROI",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "ESG",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "catena del valore di porter",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "sostenibilità",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "produzione",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "ciclo di vita del prodotto",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "direzione",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "indici di liquidità",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "remunerazione e incentivi ai lavoratori",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "sviluppo dimensionale",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "controllo direzionale (in particolare il controllo concomitante)",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "efficienza (sia manger che indicatori di efficienza)",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "05/05/2026"
+  },
+  {
+    "domanda": "sostenibilità",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "strategie competitive",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "profitto",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "matrice bcg",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "wiki",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "sisitema informativo",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici di bilancio",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "matrice bcg",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici di liquidita",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "teoria x e y",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Politica di comunicazione",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Sostenibilità",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "marketing le 4 p",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "sviluppo dimensionale",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "controllo direzionale (in particolare il controllo concomitante)",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "efficienza (sia manger che indicatori di efficienza)",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "sostenibilità",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "strategie competitive",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "profitto",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "matrice bcg",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "sisitema informativo",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici di bilancio",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "matrice bcg",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici di liquidita",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "teoria x e y",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Politica di comunicazione",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Sostenibilità",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "marketing le 4 p",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "maketing mix",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "impresa",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "matrice bcg",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici di redditività",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "stakeholder",
+    "prof": "Farfalla",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "marketing mix",
+    "prof": "Farfalla",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici di redditività",
+    "prof": "Farfalla",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici finanziari",
+    "prof": "Farfalla",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici di liquidità",
+    "prof": "Farfalla",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "sisitema informativo",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "indici di bilancio",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "matrice general electric",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Sostenibilità",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Le teorie delle finalità imprenditoriali",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Criteri ESG",
+    "prof": "Falconi",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "porter",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "funzione marketing + 4 p",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "diversificazione",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "differenziazione",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "vantaggi e svantaggi diversificazione e differenziazione",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Gestione risorse umane",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Indici di bilancio",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Gestione delle scorte",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Struttura Organizzativa Funzionale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Catena del Valore di Porter",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Economia di Scala",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Margine",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "ESG",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Scala Maslow",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Innovazione",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Ciclo di vita del prodotto",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "Business plan",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "sostenibilità",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "organizzazione divisionale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "marketing",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "edonomie di scala",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "vantaggio competitivo",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "gestione stock",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "matrice di Gasparro",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "etivity matrice CBG",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "funzione marketing + 4 p",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "roi",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "sistema informativo",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
+  },
+  {
+    "domanda": "ESG",
+    "prof": "Falconi",
+    "corso": "CLEA A",
+    "data": "06/05/2026"
   }
 ]
