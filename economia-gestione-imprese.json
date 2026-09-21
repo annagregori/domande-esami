@@ -1,5 +1,1595 @@
 [
   {
+    "domanda": "5 forze di Porter",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Marketing strategico",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Posizionamento",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Leva del prezzo",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "BEP con disegno del grafico e formula",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "ciclo di vita del prodotto",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "finalità imprenditoriali",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "analisi di bilancio e indici di bilancio (quali sono, come calcolarli e a cosa ci fanno capire)",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "cosa si intende per informazione aziendale e a cosa serve",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "cosa viene inteso per performance",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Prodotto",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Marketing",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Segmentazione del mercato",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Porter",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Teoria del successo sociale",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Imprenditorialità/managerialità",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "marketing strategico",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "catena del valore",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "strategie competitive",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "4p del marketing",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "finalità imprenditoriali e differenza tra imprenditore classico/delegato",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "politica del prezzo",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "l’elasticità della domanda",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "break Even point + grafico da disegnare a penna sul foglio (prima di iniziare a parlare)",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "indici di bilancio",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "matrice CBG",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "sistemi di informazione",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "5 forza di poter",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "organizzazione a matrice",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "matrice BCG",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "ciclo di vendita del prodotto",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "leva finanziaria",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "IT",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "indice Roe",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "VAN",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Break even point",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "politiche promozionali",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "strategie competitive",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "quale convenienza ha la diversificazione dei prodotti",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "TIR e VAN",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "indici di liquidità come si calcola e cosa ci fa capire (immediata/differita)",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "integrazione verticale",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "4p del marketing",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "indici di bilancio",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "5 forze di porter",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "catena del valore",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "08/01/2025"
+  },
+  {
+    "domanda": "Matrice del portafoglio",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Esportazioni",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Innovazioni tecnologiche",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Van e tir spiegati bene",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "I prodotti dopo che svalutano cosa succede cosa puoi cambiare",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Controllo",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Fabbisogno finanziario",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Ciclo di vita del prodotto",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Informazione",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "4p (con tutte le politiche)",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "bcg (collegato alla politica del prodotto)",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "van/tir",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "l’impresa",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "BCG",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Bep",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Stakeholder",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Roi",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Tutto sul prezzo",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Elasticità della domanda",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Bep in volumi",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "swot",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "catena del valore",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "stakeholders",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "integrazione verticale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "selezione del personale",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "gestione strategica",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "bep descrizione e costruzione del grafico",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "roi",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Determinazione del prezzo",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Differenza tra manager e imprenditore con le varie teorie che appartengono",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "5 forze di porter",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Elasticità ( beni a domanda elastica ed anelastica )",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Fidelizzazione del cliente",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Incentivazione del personale",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Stretegie di porter",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "bep nel dettaglio con formula",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Leva finanziaria e operativa",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Catena valore porter",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Teorie imprenditore",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Teorie manager",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Efficacia/efficienza",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Elasticità incrociata",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Politica prezzo",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Ciclo di vita del prodotto",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Matrice BCG",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Spiegazione 5 forze porter",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Sistema informativo (direzione e operativo)",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Bep (solo spiegazione a voce senza formule o disegni)",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Roe",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "Controllo concomitante (le 4 fasi)",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "09/01/2025"
+  },
+  {
+    "domanda": "stakeholder teoria e tipologie varie",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "matrice bcg con disegno del grafico",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "controllo e componenti del controllo concomitante",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "scala dei bisogni di Maslow",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "matrice portafoglio BCG",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "gestione della scorta",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "stakeholder",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "it in generale",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "riclassificazione stato patrimoniale e conto economico",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "indici reddituali",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "indici finanziari e patrimoniali",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "ciclo di vita del prodotto",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "BCG e bep",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "modello di Abel",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/03/2025"
+  },
+  {
+    "domanda": "Organizzazione funzionale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "Just in time (scorte)",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "catena del valore",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "strategie competitive",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "definizione di sostenibilità",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "cosa sono le economie di scala",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "politiche di prezzo",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "strategie di porter",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "BEP",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "elasticità della domanda",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "indici collegati a balance score card",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "06/03/2025"
+  },
+  {
+    "domanda": "SWOT analysis",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "5 forze di porter",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "rating esg",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "Cosa rappresenta un fonte e cosa un impiego e mi ha fatto parlare del prospetto fonti e impieghi",
+    "prof": "Maggiore",
+    "corso": "CLEA A",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "Il roe e il collegamento con la leva finanziaria",
+    "prof": "Maggiore",
+    "corso": "CLEA A",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "paradosso della produttività",
+    "prof": "Maggiore",
+    "corso": "CLEA A",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "Strategie di Marketing",
+    "prof": "Cavacece",
+    "corso": "CLEA B",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "5 forze di Porter",
+    "prof": "Cavacece",
+    "corso": "CLEA B",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "Leadership di costo",
+    "prof": "Cavacece",
+    "corso": "CLEA B",
+    "data": "02/04/2025"
+  },
+  {
+    "domanda": "Marketing mix (io ho parlato anche del prezzo, dell’imbuto promozionale)",
+    "prof": "Falcone",
+    "corso": "CLEA A",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Politica di prezzo",
+    "prof": "Falcone",
+    "corso": "CLEA A",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Elasticità incrociata",
+    "prof": "Falcone",
+    "corso": "CLEA A",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Stakeholder",
+    "prof": "Falcone",
+    "corso": "CLEA A",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "roi",
+    "prof": "Falcone",
+    "corso": "CLEA A",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "marketing",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "5 forze di porter",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "sostenibilità aziendale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "matrice di Hart",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Politica del prodotto",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Ciclo di vita del prodotto",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Indici finanziari",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Teoria degli stake holder",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "SWOT",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Strategie competitive",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "parte di sostenibilità: benessere del consumatore in generale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Come possono cambiare le situazioni di mercato e chi le influenza",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Leva finanziaria",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Paradosso della produttività",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "indici di bilancio",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Definizione sostenibilità",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Catena del valore",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Matrice bcg",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Roi",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "4p",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Matrice portafoglio",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Stakeholder",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Segmentazione del mercato",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "ROI e ROE",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Leva finanziaria",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Ciclo di vita del prodotto",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "swot analysis",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "segmentazione del mercato",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "scrematura dei prezzi",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "catena del valore",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Stakeholder",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Indici in generale",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Definizione impresa e ruolo",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Gestione aziendale",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Sistemi di controllo direzionale",
+    "prof": "Falcone",
+    "corso": "Non specificato",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "gestione delle scorte",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "pro e contro della struttura organizzativa funzionale,se è più adatta a un monobusiness o un multibusiness",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "03/04/2025"
+  },
+  {
+    "domanda": "Ciclo di vita del prodotto",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "Riclassificazione bilancio",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "Indici di redditività",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "Scomposizione Roi",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "Stakeholder",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "5 forze competitive",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "ambiente trasazionale",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "Bilancio",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "Organizzazione",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "Prodotti",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "Diagramma di produttività",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "14/05/2025"
+  },
+  {
+    "domanda": "5 forze",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "definizione sostenibilità",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "marketing in generale",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "posizionamento",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "segmentazione",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "prezzo",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "bep con formula in volume",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "Brak even point",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "politiche di marketing",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "matrice bcg",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "Il prezzo",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "Teoria del successo (3p + piramide maslow)",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "Business plan",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "BEP (vuole la formula : costi fissi / ricavi - prezzo unitario (che sarebbe il margine di contribuzione)",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "05/06/2025"
+  },
+  {
+    "domanda": "BEP",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "ROI",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "intelligenza artificiale",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Analisi swot",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Funzioni economiche e sociali dell’impresa",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Sostenibilità",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Catena del valore",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Margine di profitto",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Quando un impresa crea Valore?",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Modello delle 5 forze",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "concetto di strategia",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Strategie competitive",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Gestione scorte",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Struttura funzionale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Il vantaggio di una struttura funzionale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "La divisione",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Vantaggio competitivo",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Come si raggiunge la posizione di superiorità (nel vantaggio competitivo)",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Funzione marketing",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Potere contrattuale dei fornitori",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Scorte immobilizzazioni",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Differenziazione",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Strategia d’impresa",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Diversificazione di produzione",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Integrazione verticale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Struttura organizzativa funzionale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "I vantaggi della struttura funzionale",
+    "prof": "D'Amico",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Ros",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Teoria  stakeholder",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Ciclo di vita del prodotto",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Catena del valore",
+    "prof": "Maggiore",
+    "corso": "Non specificato",
+    "data": "16/09/2025"
+  },
+  {
+    "domanda": "Gestione delle risorse umane",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Fattore motivazionale",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Teoria di Maslow",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Indici di bilancio ( dire tutti quelli che vi ricordate , non vi ferma )",
+    "prof": "Mele",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "teoria del successo sociale",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "strategie competitive di poter",
+    "prof": "De Majo",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Sostenibilità in generale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Sviluppo dimensionale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "5 forze di Porter",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "5 forze Porter",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Barriere mercato",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Paradigmi",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Ciclo di vita prodotto",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Matrice bcg",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Indici di bilancio finanziari e patrimoniali (indici di liquidità, margine struttura e indice di tesoreria)",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "strutture organizzative (funzionale divisionale)",
+    "prof": "Farfalla",
+    "corso": "Non specificato",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Sviluppo dimensionale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Struttura funzionale e divisionale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Bilancio di sostenibilità misura l impatto ambientale e sociale di una società a fine anno , valuta l impegno della società e non sul punto di vista finanziario (importante per gli stackolter)",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Leadership di costo strategia di costo più basso",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Vantaggi competitivi (rispetto alla concorrenza) riduzione dei rischi e costi",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Economia di scala= aumento dei prodotti e riduzione dei costi",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Economia Non si basa sulla massimizzazione del profitto  ma soprattutto benessere sociale",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "Sostenibilità nella visione del impresa = l uso di energie rinnovabili (utilizzo di stackolder)",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "17/09/2025"
+  },
+  {
+    "domanda": "spiegare le strutture dell’azienda con un esempio per ciascuna",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "indici di bilancio e spiegare perché possono servire",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "forze di porter e fonti impieghi",
+    "prof": "Non specificato",
+    "corso": "CLEA A",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "le scorte",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "struttura funzionale (pro e contro)",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "la sostenibilità legata al consumatore",
+    "prof": "D'Amico",
+    "corso": "CLEA C",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "Analisi SWOT",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "Indici di liquidità",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "Balance scorecard",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "Matrice prodotti BCG",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "Sistema informativo",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "Sistema sociale",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "01/10/2025"
+  },
+  {
+    "domanda": "Struttura organigramma e gerarchia nei ruoli",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "01/10/2025"
+  },
+  {
     "domanda": "Prospetto fonti e impieghi",
     "prof": "Non specificato",
     "corso": "Non specificato",
