@@ -1,5 +1,227 @@
 [
   {
+    "domanda": "obbligazioni",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "15/09/2026"
+  },
+  {
+    "domanda": "parti essenziali del contratto",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "15/09/2026"
+  },
+  {
+    "domanda": "modi di esentarsi dall obbligazione",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "15/09/2026"
+  },
+  {
+    "domanda": "nullità e annullabilità e proprietà",
+    "prof": "Non specificato",
+    "corso": "Non specificato",
+    "data": "15/09/2026"
+  },
+  {
+    "domanda": "trascrizione delle domande giudiziali",
+    "prof": "Napoli",
+    "corso": "Non specificato",
+    "data": "15/09/2026"
+  },
+  {
+    "domanda": "La Proprietà e una serie infinita di sotto domande",
+    "prof": "Mollo",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Il caso fortuito",
+    "prof": "Mollo",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Le fonti delle Obbligazioni",
+    "prof": "Mollo",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Obbligazione Naturale",
+    "prof": "Mollo",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "caso fortuito",
+    "prof": "Napoli",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "la condizione del contratto",
+    "prof": "Napoli",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "l'assemblea organo del condominio",
+    "prof": "Napoli",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "amministratore di sostegno",
+    "prof": "Napoli",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "caso fortuito con collegamento al libro del professor Napoli, quindi responsabilità extracontrattuale oggettiva e sotto domande",
+    "prof": "Jacovitti",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "annullabilità",
+    "prof": "Jacovitti",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "nullita, discorso completo più la conversione del contratto nullo art 1425 mi sembra e la nullità parziale",
+    "prof": "Jacovitti",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "proprietà da sapere bene tutta soprattutto acquisto proprietà a titolo originario, tutti i casi con esempi concreti",
+    "prof": "Jacovitti",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "impossibilità sopravvenuta inadempimento e sotto domande",
+    "prof": "Napoli",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Caso fortuito",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Responsabilità extracontrattuale",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Pegno e ipoteca",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Diritto di superficie",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Obbligazioni alternative e facoltative",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Caso fortuito",
+    "prof": "Mollo",
+    "corso": "CLEA A",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Associazioni riconosciute e non",
+    "prof": "Mollo",
+    "corso": "CLEA A",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Elementi accidentali - in particolare le condizioni",
+    "prof": "Mollo",
+    "corso": "CLEA A",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Azioni di difesa della proprietà",
+    "prof": "Mollo",
+    "corso": "CLEA A",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Insidia Stradale",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Annullabilità contratto",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Interpretazione Legge e contratto",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Differenza interpretazione espansiva e analogia",
+    "prof": "Rendina",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Caso fortuito",
+    "prof": "Jacovitti",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Proprietà",
+    "prof": "Jacovitti",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Oggetto del contratto",
+    "prof": "Jacovitti",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "Immissioni",
+    "prof": "Jacovitti",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "trascrizione del preliminare",
+    "prof": "Napoli",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
+    "domanda": "l’errore",
+    "prof": "Napoli",
+    "corso": "Non specificato",
+    "data": "16/09/2026"
+  },
+  {
     "domanda": "⁠libro Napoli, responsabilità del custode con particolare domanda sul caso fortuito",
     "prof": "Non specificato",
     "corso": "SCAMS A",
