@@ -1,6 +1,7 @@
 let elencoDomande = [];
 let paginaCorrente = "";
 let elencoPagine = []; // Salviamo le pagine per poterle raggruppare in Home
+let domandaAttivaKey = "";
 
 // 1. Inizializzazione del sito
 async function inizializzaSito() {
@@ -19,6 +20,26 @@ async function inizializzaSito() {
     }
 }
 
+// Funzione di supporto per estrarre l'anno da una data ("GG/MM/AAAA" o "AAAA-MM-DD")
+function estraiAnno(strData) {
+    if (!strData) return null;
+    const dataPulita = String(strData).trim();
+    
+    // Formato GG/MM/AAAA
+    if (dataPulita.includes('/')) {
+        const parti = dataPulita.split('/');
+        return parti[parti.length - 1];
+    }
+    
+    // Formato AAAA-MM-DD
+    if (dataPulita.includes('-')) {
+        const parti = dataPulita.split('-');
+        return parti[0].length === 4 ? parti[0] : parti[parti.length - 1];
+    }
+
+    return null;
+}
+
 // Funzione di supporto per leggere il parametro 'materia' dall'URL e cambiare pagina
 function caricaMateriaDaURL(pagine) {
     const params = new URLSearchParams(window.location.search);
@@ -27,10 +48,8 @@ function caricaMateriaDaURL(pagine) {
     const paginaTrovata = pagine.find(p => p.id === materiaUrl);
 
     if (paginaTrovata) {
-        // Se l'URL richiede una materia specifica, carica quella (senza pushState extra)
         cambiaPagina(paginaTrovata.id, paginaTrovata.titolo, false);
     } else if (pagine.length > 0) {
-        // Altrimenti carica la prima pagina dell'elenco come predefinita
         cambiaPagina(pagine[0].id, pagine[0].titolo, false);
     }
 }
@@ -46,8 +65,10 @@ function renderMenu(pagine) {
         link.innerHTML = pag.titolo;
         link.id = `menu-item-${pag.id}`;
         
-        // Al click cambia il database visualizzato e aggiorna l'URL
-        link.onclick = () => cambiaPagina(pag.id, pag.titolo, true);
+        link.onclick = () => {
+            tornaAllaMateria(); // Chiude eventuale scheda risposta aperta
+            cambiaPagina(pag.id, pag.titolo, true);
+        };
         
         menuContainer.appendChild(link);
     });
@@ -58,19 +79,20 @@ async function cambiaPagina(idPagina, titoloPagina, aggiornaURL = true) {
     paginaCorrente = idPagina;
     document.getElementById('page-title').innerHTML = titoloPagina;
 
-    // --- AGGIORNAMENTO URL DINAMICO ---
     if (aggiornaURL) {
         const nuovoUrl = `${window.location.pathname}?materia=${encodeURIComponent(idPagina)}`;
         window.history.pushState({ id: idPagina, titolo: titoloPagina }, '', nuovoUrl);
     }
 
-    // Gestione della classe .active estetica nel menu
     document.querySelectorAll('.sidebar-item').forEach(item => item.classList.remove('active'));
     const itemAttivo = document.getElementById(`menu-item-${idPagina}`);
     if(itemAttivo) itemAttivo.classList.add('active');
 
     const homeView = document.getElementById('home-view');
     const materiaView = document.getElementById('materia-view');
+    const domandaView = document.getElementById('domanda-view');
+
+    if (domandaView) domandaView.classList.add('hidden');
 
     // --- CASO 1: SE SELEZIONATA LA HOME ---
     if (idPagina === 'home') {
@@ -86,10 +108,9 @@ async function cambiaPagina(idPagina, titoloPagina, aggiornaURL = true) {
     if (homeView) homeView.classList.add('hidden');
     if (materiaView) materiaView.classList.remove('hidden');
 
-    // Mostra il filtro parte solo per la pagina specificata
+    // Mostra il filtro parte solo per Diritto Commerciale
     const boxFiltroParte = document.getElementById('box-filtro-parte');
     if (boxFiltroParte) {
-        // Inserisci qui l'ID esatto della materia per cui vuoi attivare il filtro
         if (idPagina === 'diritto-commerciale') {
             boxFiltroParte.classList.remove('hidden');
         } else {
@@ -98,7 +119,6 @@ async function cambiaPagina(idPagina, titoloPagina, aggiornaURL = true) {
     }
 
     try {
-        // Carica il file JSON della materia
         const responseDati = await fetch(`./${idPagina}.json`);
         elencoDomande = await responseDati.json();
         
@@ -106,11 +126,9 @@ async function cambiaPagina(idPagina, titoloPagina, aggiornaURL = true) {
         aggiornaOpzioniFiltri(elencoDomande);
         document.getElementById('filter-prof').value = 'all';
         document.getElementById('filter-corso').value = 'all';
-        if (document.getElementById('filter-parte')) {
-            document.getElementById('filter-parte').value = 'all';
-        }
+        if (document.getElementById('filter-anno')) document.getElementById('filter-anno').value = 'all';
+        if (document.getElementById('filter-parte')) document.getElementById('filter-parte').value = 'all';
         
-        // Genera la tabella
         renderTabella(elencoDomande);
     } catch (error) {
         console.error(`Errore nel caricare i dati della pagina ${idPagina}:`, error);
@@ -123,10 +141,8 @@ function renderHome(pagine) {
     const homeView = document.getElementById('home-view');
     if (!homeView) return;
 
-    // Filtra per escludere la pagina "Home" stessa
     const materie = pagine.filter(p => p.id !== 'home');
 
-    // Raggruppa le materie per la chiave "anno"
     const perAnno = materie.reduce((acc, materia) => {
         const anno = materia.anno || 'CLEA';
         if (!acc[anno]) acc[anno] = [];
@@ -134,7 +150,6 @@ function renderHome(pagine) {
         return acc;
     }, {});
 
-    // Genera l'HTML dinamico a griglia
     let html = `<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6 pt-6 border-t border-[#2A2A2A]">`;
 
     for (const [anno, listaMaterie] of Object.entries(perAnno)) {
@@ -158,45 +173,51 @@ function renderHome(pagine) {
     homeView.innerHTML = html;
 }
 
-// Funzione di supporto per generare i filtri dinamici senza duplicati
+// Funzione di supporto per generare i filtri dinamici (Prof, Corso, Anno)
 function aggiornaOpzioniFiltri(datiMateria) {
     const selectProf = document.getElementById('filter-prof');
     const selectCorso = document.getElementById('filter-corso');
+    const selectAnno = document.getElementById('filter-anno');
 
-    // Svuota le vecchie opzioni mantenendo solo "Tutti"
     selectProf.innerHTML = '<option value="all">Tutti</option>';
     selectCorso.innerHTML = '<option value="all">Tutti</option>';
+    if (selectAnno) selectAnno.innerHTML = '<option value="all">Tutti</option>';
 
-    // Set estrae solo i valori unici (elimina i duplicati)
-    const professoriUnici = [...new Set(datiMateria.map(item => item.prof))].sort();
-    const corsiUnici = [...new Set(datiMateria.map(item => item.corso))].sort();
+    const professoriUnici = [...new Set(datiMateria.map(item => item.prof))].filter(Boolean).sort();
+    const corsiUnici = [...new Set(datiMateria.map(item => item.corso))].filter(Boolean).sort();
+    
+    // Deduzione automatica degli anni dalle date
+    const anniUnici = [...new Set(datiMateria.map(item => estraiAnno(item.data)))]
+                        .filter(Boolean)
+                        .sort((a, b) => b - a);
 
-    // Inserisce i nuovi professori nel menù a tendina
     professoriUnici.forEach(prof => {
-        if(prof) { 
-            const option = document.createElement('option');
-            option.value = prof;
-            option.textContent = prof;
-            selectProf.appendChild(option);
-        }
+        const option = document.createElement('option');
+        option.value = prof;
+        option.textContent = prof;
+        selectProf.appendChild(option);
     });
 
-    // Inserisce i nuovi corsi nel menù a tendina
     corsiUnici.forEach(corso => {
-        if(corso) { 
-            const option = document.createElement('option');
-            option.value = corso;
-            option.textContent = corso;
-            selectCorso.appendChild(option);
-        }
+        const option = document.createElement('option');
+        option.value = corso;
+        option.textContent = corso;
+        selectCorso.appendChild(option);
     });
+
+    if (selectAnno) {
+        anniUnici.forEach(anno => {
+            const option = document.createElement('option');
+            option.value = anno;
+            option.textContent = anno;
+            selectAnno.appendChild(option);
+        });
+    }
 }
 
 // 4. Mostra i dati effettivi
 function renderTabella(data) {
     const tbody = document.getElementById('table-body');
-    
-    // Svuota la tabella prima di inserire i nuovi dati
     tbody.innerHTML = '';
 
     if (data.length === 0) {
@@ -204,11 +225,9 @@ function renderTabella(data) {
         return;
     }
 
-    // Accumula tutte le righe in una stringa di testo
     let righeHTML = '';
 
     data.forEach(item => {
-        // Colore dinamico per i professori
         let profClass = 'bg-[#2F2F2F] text-gray-300'; 
         if (item.prof === 'Imbert') profClass = 'bg-[#1C3D27] text-[#52BA6F]';  
         if (item.prof === 'Morone') profClass = 'bg-[#1F3B4D] text-[#5CA3E6]';  
@@ -217,21 +236,22 @@ function renderTabella(data) {
         if (item.prof === 'Martucci') profClass = 'bg-[#1F3A44] text-[#4EBABA]';
         if (item.prof === 'Non specificato') profClass = 'bg-[#4A2424] text-[#ECA2A2]'; 
 
-        // Colore dinamico per il corso
         let corsoClass = 'bg-[#252525] text-gray-400 border border-[#3F3F3F]';
         if (item.corso === 'CLEA C') corsoClass = 'bg-[#1F3B4D] text-[#5CA3E6]';
         if (item.corso === 'CLEA A') corsoClass = 'bg-[#1C3D27] text-[#52BA6F]';
         if (item.corso === 'CLEA B') corsoClass = 'bg-[#3F2D54] text-[#B388EB]';
         if (item.corso === 'SCAMS' || item.corso === 'SCAMS C') corsoClass = 'bg-[#5C4033] text-[#E1A95F]';
 
-        // Valore predefinito se la proprietà "parte" manca nel file JSON
         const parteEsame = item.parte || 'Intero';
+        const domandaSanitizzata = (item.domanda || '').replace(/'/g, "\\'");
 
-        // Genera il blocco HTML della riga corrente
         righeHTML += `
             <tr class="hover:bg-[#202020] transition-colors border-b border-[#2A2A2A]">
-                <td class="p-3 flex items-center gap-2 text-gray-200">
-                    📄 ${item.domanda}
+                <td class="p-3 text-gray-200">
+                    <button onclick="apriDomanda('${paginaCorrente}', '${domandaSanitizzata}', '${item.prof || ''}', '${parteEsame}')" 
+                            class="text-left hover:text-indigo-400 underline decoration-gray-600 hover:decoration-indigo-400 transition-colors flex items-center gap-2 cursor-pointer">
+                        📄 ${item.domanda}
+                    </button>
                 </td>
                 <td class="p-3">
                     <span class="px-2 py-0.5 rounded text-xs font-medium ${profClass}">
@@ -251,34 +271,92 @@ function renderTabella(data) {
         `;
     });
 
-    // Inserisce tutte le righe insieme all'interno del corpo della tabella
     tbody.innerHTML = righeHTML;
 }
 
-// 5. Gestione filtri
+// 5. Gestione filtri (Prof, Corso, Anno, Parte)
 function applicaFiltri() {
     const profScelto = document.getElementById('filter-prof').value;
     const corsoScelto = document.getElementById('filter-corso').value;
+    const annoScelto = document.getElementById('filter-anno') ? document.getElementById('filter-anno').value : 'all';
     const parteScelta = document.getElementById('filter-parte') ? document.getElementById('filter-parte').value : 'all';
 
     const datiFiltrati = elencoDomande.filter(item => {
         const matchProf = profScelto === 'all' || item.prof === profScelto;
         const matchCorso = corsoScelto === 'all' || item.corso === corsoScelto;
         
-        // Controllo della parte d'esame
+        const annoItem = estraiAnno(item.data);
+        const matchAnno = annoScelto === 'all' || annoItem === annoScelto;
+
         const parteItem = item.parte || 'Intero';
         const matchParte = parteScelta === 'all' || parteItem === parteScelta;
         
-        return matchProf && matchCorso && matchParte;
+        return matchProf && matchCorso && matchAnno && matchParte;
     });
 
     renderTabella(datiFiltrati);
 }
 
+// Listener filtri
 document.getElementById('filter-prof').addEventListener('change', applicaFiltri);
 document.getElementById('filter-corso').addEventListener('change', applicaFiltri);
+if (document.getElementById('filter-anno')) {
+    document.getElementById('filter-anno').addEventListener('change', applicaFiltri);
+}
 if (document.getElementById('filter-parte')) {
     document.getElementById('filter-parte').addEventListener('change', applicaFiltri);
+}
+
+// --- GESTIONE VISTA RISPOSTA UTENTE ---
+function apriDomanda(materia, domandaText, prof, parte) {
+    const homeView = document.getElementById('home-view');
+    const materiaView = document.getElementById('materia-view');
+    const domandaView = document.getElementById('domanda-view');
+
+    if (homeView) homeView.classList.add('hidden');
+    if (materiaView) materiaView.classList.add('hidden');
+    if (domandaView) domandaView.classList.remove('hidden');
+
+    if (document.getElementById('dettaglio-materia')) {
+        document.getElementById('dettaglio-materia').innerText = materia.replace('-', ' ');
+    }
+    if (document.getElementById('dettaglio-titolo')) {
+        document.getElementById('dettaglio-titolo').innerText = domandaText;
+    }
+    if (document.getElementById('dettaglio-prof')) {
+        document.getElementById('dettaglio-prof').innerText = prof;
+    }
+    if (document.getElementById('dettaglio-parte')) {
+        document.getElementById('dettaglio-parte').innerText = parte;
+    }
+
+    domandaAttivaKey = `risposta_${materia}_${domandaText}`;
+    const rispostaSalvata = localStorage.getItem(domandaAttivaKey) || '';
+    if (document.getElementById('risposta-utente')) {
+        document.getElementById('risposta-utente').value = rispostaSalvata;
+    }
+}
+
+function salvaRisposta() {
+    if (!domandaAttivaKey) return;
+    const testo = document.getElementById('risposta-utente').value;
+    localStorage.setItem(domandaAttivaKey, testo);
+
+    const status = document.getElementById('salvataggio-status');
+    if (status) {
+        status.classList.remove('opacity-0');
+        setTimeout(() => {
+            status.classList.add('opacity-0');
+        }, 2000);
+    }
+}
+
+function tornaAllaMateria() {
+    const domandaView = document.getElementById('domanda-view');
+    const materiaView = document.getElementById('materia-view');
+    
+    if (domandaView) domandaView.classList.add('hidden');
+    if (materiaView) materiaView.classList.remove('hidden');
 }
 
 // Gestione dei tasti Avanti / Indietro del browser
@@ -291,9 +369,6 @@ window.addEventListener('popstate', async () => {
         console.error("Errore nel ripristino dell'URL:", e);
     }
 });
-
-// Inizializza il sito al caricamento della pagina
-window.addEventListener('DOMContentLoaded', inizializzaSito);
 
 // Inizializza il sito al caricamento della pagina
 window.addEventListener('DOMContentLoaded', inizializzaSito);
