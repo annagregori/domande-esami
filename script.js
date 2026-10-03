@@ -215,7 +215,7 @@ function aggiornaOpzioniFiltri(datiMateria) {
     }
 }
 
-// 4. Mostra i dati effettivi
+// 4. Mostra i dati effettivi (senza link sulle domande)
 function renderTabella(data) {
     const tbody = document.getElementById('table-body');
     tbody.innerHTML = '';
@@ -228,6 +228,7 @@ function renderTabella(data) {
     let righeHTML = '';
 
     data.forEach(item => {
+        // Colore dinamico per i professori
         let profClass = 'bg-[#2F2F2F] text-gray-300'; 
         if (item.prof === 'Imbert') profClass = 'bg-[#1C3D27] text-[#52BA6F]';  
         if (item.prof === 'Morone') profClass = 'bg-[#1F3B4D] text-[#5CA3E6]';  
@@ -236,6 +237,7 @@ function renderTabella(data) {
         if (item.prof === 'Martucci') profClass = 'bg-[#1F3A44] text-[#4EBABA]';
         if (item.prof === 'Non specificato') profClass = 'bg-[#4A2424] text-[#ECA2A2]'; 
 
+        // Colore dinamico per il corso
         let corsoClass = 'bg-[#252525] text-gray-400 border border-[#3F3F3F]';
         if (item.corso === 'CLEA C') corsoClass = 'bg-[#1F3B4D] text-[#5CA3E6]';
         if (item.corso === 'CLEA A') corsoClass = 'bg-[#1C3D27] text-[#52BA6F]';
@@ -243,15 +245,12 @@ function renderTabella(data) {
         if (item.corso === 'SCAMS' || item.corso === 'SCAMS C') corsoClass = 'bg-[#5C4033] text-[#E1A95F]';
 
         const parteEsame = item.parte || 'Intero';
-        const domandaSanitizzata = (item.domanda || '').replace(/'/g, "\\'");
 
+        // Domanda mostrata come semplice testo statico
         righeHTML += `
             <tr class="hover:bg-[#202020] transition-colors border-b border-[#2A2A2A]">
-                <td class="p-3 text-gray-200">
-                    <button onclick="apriDomanda('${paginaCorrente}', '${domandaSanitizzata}', '${item.prof || ''}', '${parteEsame}')" 
-                            class="text-left hover:text-indigo-400 underline decoration-gray-600 hover:decoration-indigo-400 transition-colors flex items-center gap-2 cursor-pointer">
-                        📄 ${item.domanda}
-                    </button>
+                <td class="p-3 flex items-center gap-2 text-gray-200">
+                    📄 ${item.domanda}
                 </td>
                 <td class="p-3">
                     <span class="px-2 py-0.5 rounded text-xs font-medium ${profClass}">
